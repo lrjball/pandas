@@ -47,7 +47,7 @@ RUN cd "$pandas_home" \
     && python -m pip install -e . \
     && python -m pip install notebook --upgrade
     
-ARG NB_USER=pandas-dev
+ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
