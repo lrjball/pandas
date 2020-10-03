@@ -2,7 +2,7 @@ FROM continuumio/miniconda3
 
 # if you forked pandas, you can pass in your own GitHub username to use your fork
 # i.e. gh_username=myname
-ARG gh_username=pandas-dev
+ARG gh_username=lrjball
 ARG pandas_home="/home/pandas"
 
 # Avoid warnings by switching to noninteractive
@@ -56,7 +56,7 @@ ENV HOME /home/${NB_USER}
 RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
-    ${NB_USER}    
+    ${NB_USER}
 
 COPY . ${HOME}
 USER root
