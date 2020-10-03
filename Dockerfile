@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM continuumio/miniconda3:4.8.2
 
 # if you forked pandas, you can pass in your own GitHub username to use your fork
 # i.e. gh_username=myname
